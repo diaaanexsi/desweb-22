@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta http-equiv="content-type"content="text/html" charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>highlight</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$(".highlight_bold").toggleClass("highlight");
+			});
+		});
+
+	</script>
+	<style >
+		.highlight{
+			background-color: yellow;
+			color: red;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>PTIK FKIP UNS</h1>
+	<p>
+		The <span class="highlight_bold">Faculty of Teacher Training and Education</span>, <span class="highlight_bold">Sebelas Maret University</span>, Surakarta is an <span class="highlight_bold"> Educational Personnel Education Institution (LPTK)</span> which has 24 study programs in 6 majors. Each study program has its own characteristics in producing<span class="highlight_bold"> superior, strong and intelligent educational staff.</span>
+	</p>
+
+	<p>
+		The <span class="highlight_bold">Informatics and Computer Technology Education (PTIK)</span> study program is planned to take shelter in the management of the <span class="highlight_bold">Engineering and Vocational Education (PTK)</span> department. This placement revises our previous statement, where the PTIK study program is under the P.MIPA department. PTIK is a study program that will produce graduates who are <span class="highlight_bold">prioritized to teach in vocational/vocational programs</span>. So, it would be better if PTIK was under the PTK department which oversees vocational programs such as <span class="highlight_bold">Building Engineering Education</span>, and <span class="highlight_bold">Mechanical Engineering Education</span>. To meet the needs of lecturers in the field of information technology that cannot be met by the PTK department, PTIK will conduct <span class="highlight_bold">resource sharing with the mathematics study program.</span>
+	</p>
+	
+	<button>highlight</button>
+</body>
+</html>

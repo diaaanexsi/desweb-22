@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menggunakan media Querry CSS3</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.smartphone{
+			display: none;
+		}
+		@media screen and (max-width: 428px){
+			body{
+				background-color: yellow;
+			}
+			.smartphone{
+				display:block ;
+				background-color: yellow;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h3>Menggunakan Media Querry CSS 3</h3>
+	<div class="smartphone">
+		<h2>Terdeteksi ukuran smartphone</h2>
+	</div>
+</body>
+</html>

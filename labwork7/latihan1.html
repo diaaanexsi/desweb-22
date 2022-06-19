@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kalkulator Sederhana</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function count(){
+
+			var myForm= document.form1;
+			var a=eval (myForm.a.value);
+			var b=eval (myForm.b.value);
+			var pil=myForm.ope.value
+			if (pil=="+"){
+				var c=a+b;
+			}
+			else if (pil=="-"){
+				var c=a-b;
+			}
+			else if (pil=="x"){
+				var c=a*b;
+			}
+			else if (pil==":"){
+				var c=a/b;
+			}
+			myForm.result.value=c;
+			myForm.a.value="";
+			myForm.b.value="";
+		}
+		function del(){
+			document.form1.reset();
+		}
+
+	</script>
+	<div align="left-side">
+		<form name="form1" action="#">
+			<p>number 1 <input type="text" name="a"></p>
+			<p>number 2 <input type="text" name="b"></p>
+			<p>result<input type="text" name="result" disabled="true"></p>
+			<p>operator <select name="ope"></p>
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="x">x</option>
+				<option value=":">:</option>
+			</select>
+			<input type="button" value="=" onclick="count()" />
+			<input type="button" value="delete" onclick="del()" />
+			
+		</form>
+	
+</body>
+</html>
